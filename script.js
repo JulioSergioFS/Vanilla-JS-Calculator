@@ -12,6 +12,7 @@ clickSymbolButton(divide);
 clickSymbolButton(multiply);
 clickNumberButton(num);
 clickSymbolButton(equal);
+pressKey();
 
 
 function clickNumberButton(button) {
@@ -37,13 +38,39 @@ function clickSymbolButton(button) {
         if (button.textContent === '÷') {
             view.innerHTML += '/';
         }
-        
+
         if (button.textContent === 'X') {
             view.innerHTML += '*';
         }
 
-        if(button.textContent === '='){
+        if (button.textContent === '=') {
             view.innerHTML = eval(view.innerHTML);
         }
     })
+}
+
+function pressKey() {
+    document.addEventListener('keydown', e => {
+        if (!isNaN(parseInt(e.key, 10))) {
+            view.innerHTML += e.key;
+        } else {
+            console.log(e.key)
+            if (e.key.toUpperCase() === 'C') {
+                view.innerHTML = '';
+            }
+
+            if (new Array('/', '*', '+', '-').includes(e.key)) {
+                view.innerHTML += e.key;
+            }
+
+            if (e.key.toUpperCase() === 'X') {
+                view.innerHTML += '*';
+            }
+
+            if (e.key === '=' || e.key === 'Enter') {
+                view.innerHTML = eval(view.innerHTML);
+            }
+        }
+    })
+
 }
