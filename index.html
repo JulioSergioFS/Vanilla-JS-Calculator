@@ -1,39 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
 </head>
+
 <body>
+    <div id="calculator-background-top"></div>
+    <div id="calculator-background-bottom"></div>
     <table>
         <tr>
             <td id="viewfinder" colspan="4"></td>
         </tr>
         <tr>
-            <td id="clear">C</td>
-            <td id="cancel-entry">CE</td>
-            <td id="divide">÷</td>
-            <td id="multiply">X</td>
+            <td class="especial-button" id="clear">C</td>
+            <td class="especial-button" id="cancel-entry">CE</td>
+            <td class="symbol" id="divide">÷</td>
+            <td class="symbol" id="multiply">X</td>
         </tr>
         <tr>
             <td class="button">7</td>
             <td class="button">8</td>
             <td class="button">9</td>
-            <td class="button">-</td>
+            <td class="symbol" class="button">-</td>
         </tr>
         <tr>
             <td class="button">4</td>
             <td class="button">5</td>
             <td class="button">6</td>
-            <td class="button">+</td>
+            <td class="symbol" class="button">+</td>
         </tr>
         <tr>
             <td class="button">1</td>
             <td class="button">2</td>
             <td class="button">3</td>
-            <td rowspan="2"  id="equal">=</td>
+            <td rowspan="2" class="especial-button"  id="equal">=</td>
         </tr>
         <tr>
             <td class="button" colspan="2">0</td>
@@ -42,4 +48,5 @@
     </table>
     <script src="script.js"></script>
 </body>
+
 </html>
