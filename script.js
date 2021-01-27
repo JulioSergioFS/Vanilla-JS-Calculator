@@ -54,7 +54,6 @@ function pressKey() {
         if (!isNaN(parseInt(e.key, 10))) {
             view.innerHTML += e.key;
         } else {
-            console.log(e.key)
             if (e.key.toUpperCase() === 'C') {
                 view.innerHTML = '';
             }
