@@ -11,39 +11,37 @@
 </head>
 
 <body>
-    <div id="calculator-background-top"></div>
-    <div id="calculator-background-bottom"></div>
-    <table>
-        <tr>
-            <td id="viewfinder" colspan="4"></td>
-        </tr>
-        <tr>
+    <table id="calculator-background">        
+        <thead id="viewfinder-tr">    
+            <th id="viewfinder" colspan="4"></th>
+        </thead>
+        <tr class="first-button-tr">
             <td class="especial-button" id="clear">C</td>
             <td class="especial-button" id="cancel-entry">CE</td>
             <td class="symbol" id="divide">÷</td>
-            <td class="symbol" id="multiply">X</td>
+            <td class="symbol" id="multiply">x</td>
         </tr>
         <tr>
-            <td class="button">7</td>
-            <td class="button">8</td>
-            <td class="button">9</td>
-            <td class="symbol" class="button">-</td>
+            <td class="number-button">7</td>
+            <td class="number-button">8</td>
+            <td class="number-button">9</td>
+            <td class="symbol" id="minus">-</td>
         </tr>
         <tr>
-            <td class="button">4</td>
-            <td class="button">5</td>
-            <td class="button">6</td>
-            <td class="symbol" class="button">+</td>
+            <td class="number-button">4</td>
+            <td class="number-button">5</td>
+            <td class="number-button">6</td>
+            <td class="symbol" id="plus">+</td>
         </tr>
         <tr>
-            <td class="button">1</td>
-            <td class="button">2</td>
-            <td class="button">3</td>
+            <td class="number-button">1</td>
+            <td class="number-button">2</td>
+            <td class="number-button">3</td>
             <td rowspan="2" class="especial-button"  id="equal">=</td>
         </tr>
         <tr>
-            <td class="button" colspan="2">0</td>
-            <td class="button">.</td>
+            <td class="number-button" colspan="2">0</td>
+            <td class="number-button">.</td>
         </tr>
     </table>
     <script src="script.js"></script>

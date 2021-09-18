@@ -1,57 +1,80 @@
-:root{
-    font-size: large;
-    font-family: 'Montserrat', sans-serif;
-    color: rgb(255, 248, 221);
+:root {
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+  color: #bcd1db;
+  background-color: rgb(90, 90, 90);
 }
 
-table, td{
-    border: 2px solid black;
-    border-spacing: 0.8rem;
-    text-align: center;
+table,
+td {
+  border: none;
+  border-radius: 10px;
+  border-spacing: 0.7rem;
+  text-align: center;
+  white-space: nowrap;
 }
 
-td{
-    padding: 1.7rem;
+tbody:before {
+  content: "@";
+  display: block;
+  line-height: 1px;
+  text-indent: -99999px;
 }
 
-#calculator-background-top{
-    background-color: rgb(61, 61, 61);
-    height: 44px;
-    left: -27px;
-    margin: 2rem;
-    padding: 2rem;
-    position: absolute;
-    top: -27px;
-    width: 324px;
-    z-index: -1;
+th {
+  padding: 1rem;
+  z-index: 1003;
 }
 
-#calculator-background-bottom{
-    background-color: rgb(112, 112, 112);
-    height: 428px;
-    left: -27px;
-    margin: 2rem;
-    padding: 2rem;
-    position: absolute;
-    top: 89px;
-    width: 326px;
-    z-index: -1;
+td {
+  border-radius: 3px;
+  height: 2.2rem;
+  width: 4rem;
 }
 
-#viewfinder{
-    background-color: #95c48b;
-    color: #3c6439;
-    height: 1.2rem;
+.first-button-tr {
+  margin-top: 4rem;
 }
 
-.button{
-    background-color: rgb(75, 75, 75);
+#calculator-background {
+  background: linear-gradient(
+    180deg,
+    rgba(34, 34, 34, 1) 0%,
+    rgba(15, 15, 15, 1) 100%
+  );
 }
 
-.especial-button{
-    background-color:rgb(51, 165, 165);
+#viewfinder {
+  background-color: #798d97;
+  color: #2e412f;
+  height: 1.2rem;
 }
 
-.symbol{
-    background-color: rgb(206, 118, 67);
+#viewfinder-tr {
+  border-collapse: separate;
+  border-spacing: 20px 35px;
+}
+
+.number-button {
+  background: linear-gradient(
+    180deg,
+    rgba(23, 86, 115, 1) 0%,
+    rgba(17, 64, 85, 1) 100%
+  );
+}
+
+.especial-button {
+  background: linear-gradient(
+    180deg,
+    rgba(160, 76, 89, 1) 0%,
+    rgba(130, 60, 71, 1) 100%
+  );
+}
+
+.symbol {
+  background: linear-gradient(
+    180deg,
+    rgb(48, 138, 168) 0%,
+    rgb(30, 94, 116) 100%
+  );
 }
